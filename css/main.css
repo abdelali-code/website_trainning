@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Nanum+Gothic&display=swap');
+
+/*general setup*/
+
+/* font used 
+	'Nanum Gothic' : for main content
+	'Bree Serif' : for navigation */
+
+/* variables */
+:root {
+	--main_backg : rgb(238, 238, 238);
+	--btn_color: rgb(248, 180, 54);
+}
+
+/* end of variables */
+
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+
+
+html {
+	font-family: 'Nanum Gothic', sans-serif;
+	overflow-x: hidden;
+}
+
+
+body {
+	font-size: 1.2rem;
+	line-height: 1.7;
+}
+
+/* start header */
+header {
+  background: url(../img/white-smartphone-beside-silver-laptop-computer-1036808.jpg) no-repeat center center;
+  background-size: cover;
+  min-height: 600px;
+  height: 75vh;
+  color: #fff;
+}
+
+.overlay {
+	width: 100%;
+	background-color: #1a296e80;
+	height: 100%;
+}
+nav {
+	display: flex;
+	justify-content: flex-end;
+	font-family: 'Bree Serif', serif;
+	font-size: 1rem;
+	
+}
+
+nav a {
+	color: #fff;
+}
+nav .logo {
+	margin-right: auto;
+	font-size: 32px;
+	color: var(--btn_color);
+}
+.links {
+	padding-top: 12px;
+}
+
+.links li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.content_of_header {
+	margin-top: 150px;
+}
+
+
+.content_of_header p {
+	font-size: 1.5rem;
+	padding-bottom: 15px;
+}
+
+.btn:hover {
+	background-color: rgb(199, 134, 30);
+	color: #fff;
+}
+
+
+.links li:hover a{
+	color: var(--btn_color);
+}
+
+@media (max-width: 992px)
+{
+nav {
+	flex-direction: column;
+}
+
+header {
+	height: auto;
+}
+.links li {
+	display: block;
+	margin-left: 0;
+	margin-bottom: 20px;
+	font-size: 1.5rem;
+}
+.content_of_header {
+	padding-bottom: 24px;
+}
+}
+/* end header */
+
+/* first section */
+
+
+/* end of first section */
+
+
+
+
+
+
+
+/* for mobile and tablet */
+@media (max-width: 767px)
+{
+
+}
+
+/* for small screen */
+@media (min-width: 768px)
+{
+.container {
+	width: 750px;
+}
+}
+
+/* for medium screen  */
+@media (min-width: 992px)
+{
+.container {
+	width: 970px;
+}
+}
+
+/* for large screen */
+@media (min-width: 1200)
+{
+.container {
+	width: 1170px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* general reules */
+.container {
+	margin: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 20px;
+}
+
+			
+.full_width {
+	background-color: var(--main_backg);
+	width: 100%;
+	padding-top: 24px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.h1 {
+	font-size: 3rem;
+	font-family: 'Bree Serif', serif;
+}
+
+.btn {
+	padding: 20px 20px;
+	background-color: var(--btn_color);
+	border: none;
+	border-radius: 12px;
+	cursor: pointer;
+	font-size: 1.2rem;
+}
+

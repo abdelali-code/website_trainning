@@ -134,6 +134,9 @@ header {
 /* end services section */
 
 /* qui nous section */ 
+.qui_nous {
+	clear: both;
+}
 #qui_nous div div:first-child {
 	width: 40%;
 	padding-top: 32px;
@@ -156,7 +159,9 @@ header {
 
 
 /* nous réalisations */
-
+.realisations {
+	clear: both;
+}
 .projects div {
 	width: 23%;
 	height: auto;
@@ -174,6 +179,7 @@ header {
 }
 .div_realisa {
 	position: relative;
+	/* position: fixed; */
 	top: 80px;
 }
 
@@ -213,7 +219,41 @@ header {
 	opacity: 0.2;
 }
 
+@media (max-width: 992px) {
+	.projects div {
+		width: 48%;
+	}
+}
 /* end nous réalisations */
+/* equipe section */
+.equipes {
+	padding: 48px 0px;
+	clear: both;
+	margin-top: 48px;
+	position: relative;
+	top: 120px;
+	color: #000;
+	background-color: rgba(241, 240, 240, 0.87);
+}
+
+.equipe {
+	display: flex;
+}
+.equipe figure {
+	flex: 30%;
+	padding: 1.5%;
+}
+
+.equipe figure img {
+	width: 200px;
+	height: 200px;
+	padding: 48px 48px 0px 48px;
+}
+
+.devis {
+	background-color: #f78d2b;
+}
+/* end of equipe section */
 @media (max-width: 992px)
 {
 	header {
@@ -278,6 +318,9 @@ header {
 	.first_serv figure {
 		width: 80%;
 		float: none;
+	}
+	.projects div {
+		width: 98%;
 	}
 }
 /* for mobile and tablet screen */

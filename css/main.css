@@ -86,7 +86,7 @@ nav ul li a:hover {
     color: #50cc65;
     visibility: hidden;
     position: relative;
-    top: -285px;
+    top: -255px;
     left: 100px;
 }
 
@@ -122,6 +122,9 @@ nav ul li a:hover {
         flex-direction: column;
         text-align: center;
     }
+    .title {
+        font-size: 32px !important;
+    }
 }
 /* end header */
 
@@ -129,8 +132,6 @@ nav ul li a:hover {
 
 .services {
     padding-bottom: 32px;
-    
-    
 }
 
 .fig_item {
@@ -161,13 +162,22 @@ nav ul li a:hover {
 }
 @media (max-width: 992px) {
     .services {
-        margin-top: 400px;
+        margin-top: 300px;
 
     }
     .fig_item {
         flex-direction: column;
     }
 }
+
+@media (max-width: 575px)
+{
+    .services {
+        margin-top: 200px;
+
+    }
+} 
+
 /* end services */
 
 /* qui somme nous */
@@ -191,6 +201,10 @@ nav ul li a:hover {
         flex-direction: column;
         text-align: center;
         padding-bottom: 20px;
+
+    }
+    .about_descri {
+        margin: 0;
 
     }
 }
@@ -267,11 +281,15 @@ nav ul li a:hover {
     .projects div {
         width: 46%;
     }
+    .pro h3 {
+        left: 43%;
+        top: 10%;
+    }
 }
 @media (max-width: 575px)
 {
     .projects div {
-        width: 92%;
+        width: 96%;
     }
 
 }
@@ -425,7 +443,7 @@ nav ul li a:hover {
     } 
     .prising_item {
         margin-bottom: 20px;
-    }  
+    }
 }
 /* end pricing */
 
@@ -434,6 +452,7 @@ nav ul li a:hover {
 .socail {
     display: flex;
     justify-content: space-around;
+    padding: 32px 0px;
 }
 
 .socail div {
@@ -527,6 +546,7 @@ footer ul li a {
     color: #fff;
 }
 
+
 @media (max-width: 992px) {
     .contact {
         flex-direction: column;
@@ -544,6 +564,16 @@ footer ul li a {
         top: 500px;
         left: -140px;
         
+    }
+    footer ul {
+        visibility: hidden;
+    }
+    footer {
+        flex-direction: column;
+    }
+    footer p {
+        margin: auto;
+        padding-top: 32px;
     }
 }
 

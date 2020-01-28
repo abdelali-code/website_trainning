@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,16 +12,16 @@
     <header>
         <nav>
             <a href="#" class="logo">YouWeb</a>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">services</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">home</a></li>
-                <li><a href="#">testimonials</a></li>
-                <li><a href="#">review</a></li>
-                <li><a href="#">qui somme nous</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Contact us</a></li>
+            <ul class="links">
+                <li><a href="#">Acceuil</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#qui_nous">qui nous</a></li>
+                <li><a href="#achieve">Réalisations</a></li>
+                <li><a href="#equipes">Equipe</a></li>
+                <li><a href="#clients">Clients</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#statistic">Contact us</a></li>
+                <button class="menu" onclick="Hide()"><i class="fas fa-bars"></i></button>
             </ul>
         </nav>
         <div class="container">
@@ -32,6 +32,7 @@
                         Nous créons des sites internet PREMIUM équipés d'un espace d'administration ergonomique, optimisés 
                         pour le référencement naturel et compatibles avec les tablettes et les mobiles
                     </p>
+                    <button class="btn">demander un devis</button>
                 </div>
                 <div class="head_img">
                     <img src="./img/—Pngtree—website design illustration concept. flat_4188249.png" alt="" class="res-img">
@@ -40,10 +41,10 @@
         </div>
     </header>
     <main>
-        <section class="services">
+        <section class="services" id="services">
             <div class="container">
                 <h2 class="title text-center">Notre services</h2>
-                <div class="flex">
+                <div class="fig_item">
                     <figure class="text-center">
                         <i class="fas fa-paint-brush"></i>
                         <figcaption>
@@ -229,23 +230,28 @@
             </section>
             <!-- end partner -->
             <!-- testimonials -->
-            <section>
+            <section class="testimonials">
                 <div class="container">
-                    <h2 class="title text-center">testimonials</h2>
-                    <p>our users say about us</p>
+                    <h2 class="title text-center">NOS CLIENTS ADORENT TRAVAILLER AVEC NOUS</h2>
                     <div class="users">
                         <div>
-                            <img>
+                            <div class="name">
+                                <img src="./img/users/men-s-white-dress-shirt-936229.jpg" class="res-img">
+                                <p><span>joon snow</span>gérant</p>
+                            </div>
                             <p>
-                                J'ai eu une expérience formidable en travaillant avec Marozed! Cette entreprise possède un réseau formidable. 
+                                J'ai eu une expérience formidable en travaillant avec YouWeb! Cette entreprise possède un réseau formidable. 
                                 Du propriétaire Ryan au responsable Adil et aux développeurs, vous savez que vous êtes entre de bonnes mains à tous les niveaux et à toutes les étapes du processus de développement Web. J'ai été particulièrement impressionné par la réactivité, 
                                 et les efforts déployés pour notre projet. Je suis ravi de lancer notre nouveau site Web.”
                             </p>
                         </div>
                         <div>
-                            <img>
+                            <div class="name">
+                                <img src="./img/users/woman-wearing-pink-collared-half-sleeved-top-1036623.jpg" class="res-img" height=50%>
+                                <p><span>joon snow</span>gérant</p>
+                            </div>
                             <p>
-                                “L’équipe de Marozed a tout donné afin de créer mon logo et mon site web. 
+                                “L’équipe de YouWeb a tout donné afin de créer mon logo et mon site web. 
                                 Dès le début, j'ai su que j’étais entre de bonnes mains. Le site a fait ses preuves, je reçois de nombreux compliments et il est responsable de l’acquisition de plusieurs contrats au cours des deux dernières années. Travailleur avec leur équipe est très agréable, ils sont créatifs, 
                                 utiles, et le référencement a joué un rôle clé dans la réussite.”
                             </p>
@@ -254,6 +260,140 @@
                 </div>
             </section>
             <!-- end testimonials -->
+
+            <!-- pricing -->
+            <section id="pricing">
+                <h2 class="title text-center">Nos Offres De Création De Site Internet</h2>
+                <div class="container pricing_list">
+                    <div class="prising_item">
+                        <h4>PACK VITRINE</h4>
+                        <ul>
+                            <li>3000.00 <sup>Dhs</sup><li>
+                            <li>Site dynamique</li>
+                            <li>Interface d’administration intuitive</li>
+                            <li>Design responsive & moderne</li>
+                            <li>3 Pages web</li>
+                            <li>Nom de domaine offert</li>
+                            <li>Hebergement inclus</li>
+                            <li>Certificat SSL</li>
+                            <li>Code optimisé SEO</li>
+                            <li>Formulaire de contact</li>
+                            <li>Intégration de Google Map</li>
+                            <li class="not_sup_vitrine">10 comptes mail professionnels</li>
+                            <li class="not_sup_vitrine">Fonctions E-commerce *</li>
+                            <li>Garantie 1 an MAJ *</li>
+                            <li>Rapports des statistiques et analyses</li>
+                        </ul>
+                        <button class="btn">choisir</button>
+                    </div>
+                    <div class="prising_item">
+                        <h4>PACK INTÉGRAL</h4>
+                        <ul>
+                            <li>5500.00 <sup>Dhs</sup><li>
+                            <li>Site dynamique</li>
+                            <li>Interface d’administration intuitive</li>
+                            <li>Design responsive & moderne</li>
+                            <li>Pages web illimitées</li>
+                            <li>Nom de domaine offert</li>
+                            <li>Hebergement inclus</li>
+                            <li>Certificat SSL</li>
+                            <li>Code optimisé SEO</li>
+                            <li>Formulaire de contact</li>
+                            <li>Intégration de Google Map</li>
+                            <li>10 comptes mail professionnels</li>
+                            <li class="not_sup_integral">Fonctions E-commerce *</li>
+                            <li>Garantie 1 an MAJ *</li>
+                            <li>Rapports des statistiques et analyses</li>
+                        </ul>
+                        <button class="btn">choisir</button>
+                    </div>
+                    <div class="prising_item">
+                        <h4>PACK E-COMMERCE</h4>
+                        <ul>
+                            <li>9500.00 <sup>Dhs (promo)</sup><li>
+                            <li>Site dynamique</li>
+                            <li>Interface d’administration intuitive</li>
+                            <li>Design responsive & moderne</li>
+                            <li>Pages web illimitées</li>
+                            <li>Nom de domaine offert</li>
+                            <li>Hebergement inclus</li>
+                            <li>Certificat SSL</li>
+                            <li>Code optimisé SEO</li>
+                            <li>Formulaire de contact</li>
+                            <li>Intégration de Google Map</li>
+                            <li>10 comptes mail professionnels</li>
+                            <li>Fonctions E-commerce *</li>
+                            <li>Garantie 2 ans MAJ / DEV</li>
+                            <li>Rapports des statistiques et analyses</li>
+                        </ul>
+                        <button class="btn">choisir</button>
+                    </div>
+                </div>
+            </section>
+            <!-- end pricing -->
+            <!-- statistic -->
+            <section class="statistic" id="statistic">
+                <h2 class="title text-center">Notre Agence En Chiffre</h2>
+                <div class="container socail">
+                    <div class="downloand">
+                        <i class="fas fa-download"></i>
+                        <span>+35 000</span>
+                    </div>
+                    <div class="awards">
+                        <i class="fas fa-medal"></i>
+                        <span>10</span>
+                    </div>
+                    <div class="likes">
+                        <i class="fas fa-thumbs-up"></i>
+                        <span>+200 000</span>
+                    </div>
+                    <div class="recommended">
+                        <i class="fas fa-globe"></i>
+                        <span>+2 000</span>
+                    </div>
+                </div>
+                <div class="contact container">
+                    <div>
+                        <a href="#" class="logo">YouWeb</a>
+                        <p>
+                            Nous sommes très soucieux des nouvelles tendances en matière de design et 
+                            nous suivons de très près l’évolution des nouvelles technologies du Web. Nous désirons vous offrir l’opportunité 
+                            d’avoir un site web à la hauteur de vos ambitions avec un prix très correct
+                        </p>
+                        <div class="social_media_icon">
+                            <i class="fab fa-facebook-square"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-youtube"></i>
+                            <a href=""><i class="fas fa-arrow-up"></i></a>
+                        </div>
+                    </div>
+                    <div class="contactez_nous">
+                        <h4>contactez nous</h4>
+                        <form>
+                            <input type="text" id="name" name="name" placeholder="full name">
+                            <input type="email" id="email" name="email" placeholder="email address">
+                            <textarea id="msg" name="msg" placeholder="write your message" style="height:200px"></textarea>
+                            <button type="submit" class="btn">submit</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- end statistic -->
         </main>
+        <footer>
+            <p>Copyright 2020 all right reserved</p>
+            <ul>
+                <li><a href="#">Acceuil</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#qui_nous">qui nous</a></li>
+                <li><a href="#achieve">Réalisations</a></li>
+                <li><a href="#equipes">Equipe</a></li>
+                <li><a href="#clients">Clients</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#statistic">Contact us</a></li>
+            </ul>
+        </footer>
+        <script src="./js/main.js">
+        </script>
 </body>
 </html>

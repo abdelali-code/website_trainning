@@ -404,14 +404,17 @@ nav ul li a:hover {
     width: 340px;
     /* padding: 20px; */
     text-align: center;
-    border-radius: 10px;
+    
     background-color: #fff;
     padding-bottom: 20px;
-    border: 0.6px solid grey;
+    border-bottom: 0.2px solid rgb(128, 128, 128);
+    border-left: 0.2px solid grey;
+    border-right: 0.2px solid grey;
+    transition: all .6s;
 }
 
 .prising_item h4 {
-    padding: 28px 20px;
+    padding: 24px 20px;
     width: inherit;
     background-color: #50cc65;
     color: #fff;
@@ -436,13 +439,17 @@ nav ul li a:hover {
     transform: translateY(-15px);
     box-shadow: 10px 10px 10px grey;
 }
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
     .pricing_list{
         flex-direction: column;
         align-items: center;
     } 
     .prising_item {
         margin-bottom: 20px;
+        width: 70%;
+    }
+    .prising_item h4 {
+        width: 100%;
     }
 }
 /* end pricing */

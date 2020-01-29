@@ -6,24 +6,25 @@
     <script src="https://kit.fontawesome.com/8bfa5eb2d0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" sizes="40x40" href="./img/home-icon-silhouette.png">
     <title>Home ...</title>
 </head>
 <body>
+    <nav>
+        <a href="#" class="logo">YouWeb</a>
+        <ul class="links" id="togg">
+            <li><a href="#" class="active">Acceuil</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#qui_nous">qui nous</a></li>
+            <li><a href="#achieve">Réalisations</a></li>
+            <li><a href="#equipes">Equipe</a></li>
+            <li><a href="#clients">Clients</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#statistic">Contact us</a></li>
+            <button class="menu" onclick="Hide()"><i class="fas fa-bars"></i></button>
+        </ul>
+    </nav>
     <header>
-        <nav>
-            <a href="#" class="logo">YouWeb</a>
-            <ul class="links">
-                <li><a href="#">Acceuil</a></li>
-                <li><a href="#services">services</a></li>
-                <li><a href="#qui_nous">qui nous</a></li>
-                <li><a href="#achieve">Réalisations</a></li>
-                <li><a href="#equipes">Equipe</a></li>
-                <li><a href="#clients">Clients</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#statistic">Contact us</a></li>
-                <button class="menu" onclick="Hide()"><i class="fas fa-bars"></i></button>
-            </ul>
-        </nav>
         <div class="container">
             <div class="header">
                 <div class="description">
@@ -44,6 +45,7 @@
         <section class="services" id="services">
             <div class="container">
                 <h2 class="title text-center">Notre services</h2>
+                <p class="exlipacation">Nous vous accompagnons</p>
                 <div class="fig_item">
                     <figure class="text-center">
                         <i class="fas fa-paint-brush"></i>
@@ -111,6 +113,7 @@
             <section class="realisations" id="achieve">
                 <div class="container div_realisa">
                     <h2 class="title text-center">Nos Réalisations</h2>
+                    <p class="exlipacation">LES PROJETS SUR LESQUELS NOUS AVONS AIMÉ TRAVAILLER</p>
                     <div class="projects">
                         <div class="float_left pro">
                             <img src="./img/projects/ben-kolde-b15nB4ykyxc-unsplash.jpg" alt="alfa project">
@@ -208,23 +211,24 @@
             <section id="clients">
                 <div class="container">
                     <h2 class="title text-center">our partner</h2>
+                    <p class="exlipacation">ILS NOUS ONT FAIT CONFIANCE</p>
                     <div class="partner">
-                        <img src="./img/partner/logo_maroc_1-a5fc3c9a5412466b7a36abc5d84eeae853ad6368cd66777488bed009fe8a0842.png" alt="">
-                        <img src="./img/partner/logo_maroc_10-13224d31b676e98663b995cc19192f249a9bc744b82900d6b35855801359ed2c.png" alt="">
-                        <img src="./img/partner/logo_maroc_11-47423074b9dce4c2ddd9be3ce1ca7bef6fe9a5fc788e672227dd4fc9fbba1245.png" alt="">
-                        <img src="./img/partner/logo_maroc_12-27cd3e73680aef983c1700e552bbcef3c8c23cd37e83f77fde2bf884c53924e1.png" alt="">
+                        <img src="./img/partner/logo_maroc_1-a5fc3c9a5412466b7a36abc5d84eeae853ad6368cd66777488bed009fe8a0842.png" alt="logo_maroc">
+                        <img src="./img/partner/logo_maroc_10-13224d31b676e98663b995cc19192f249a9bc744b82900d6b35855801359ed2c.png" alt="logo_maroc">
+                        <img src="./img/partner/logo_maroc_11-47423074b9dce4c2ddd9be3ce1ca7bef6fe9a5fc788e672227dd4fc9fbba1245.png" alt="logo_maroc">
+                        <img src="./img/partner/logo_maroc_12-27cd3e73680aef983c1700e552bbcef3c8c23cd37e83f77fde2bf884c53924e1.png" alt="logo_maroc">
                     </div>
                     <div class="partner">
-                        <img src="./img/partner/logo_maroc_13-29437eed32bb1814c8da48b4f0cf3e5e9ec1a1b88a0e67f7c74a0d2c9c93027e.png" alt="">
-                        <img src="./img/partner/logo_maroc_14-c0ab68b0835057878d5ff466bea11fb64655f98f77006e0ce8ff468f3e0a2316.png" alt="">
-                        <img src="./img/partner/logo_maroc_15-4ffaf3811903b75cb1a5c838d6b3285ace8f1ab2eec16ee5650709cfe265b37d.png" alt="">
-                        <img src="./img/partner/logo_maroc_2-2f7285f835e726cfacaabdfb56ec870815438b05b8fa4c51b13794585ddc00c4.png" alt="">
+                        <img src="./img/partner/logo_maroc_13-29437eed32bb1814c8da48b4f0cf3e5e9ec1a1b88a0e67f7c74a0d2c9c93027e.png" alt="logo_maroc">
+                        <img src="./img/partner/logo_maroc_14-c0ab68b0835057878d5ff466bea11fb64655f98f77006e0ce8ff468f3e0a2316.png" alt="logo_maroc">
+                        <img src="./img/partner/logo_maroc_15-4ffaf3811903b75cb1a5c838d6b3285ace8f1ab2eec16ee5650709cfe265b37d.png" alt="logo_maroc">
+                        <img src="./img/partner/logo_maroc_2-2f7285f835e726cfacaabdfb56ec870815438b05b8fa4c51b13794585ddc00c4.png" alt="logo_maroc">
                     </div>
                     <div class="partner">
-                        <img src="./img/partner/logo_maroc_3-8bdcf491bb88657d0d9a40ced60d543c9abc4bfd6125871d2063f6fbdd57357d.png" alt="">
-                        <img src="./img/partner/logo_maroc_4-32af577cdd518c54bae8901eb7efc1d8bf58ce0d2a68de54eb91011a0f9c3ef8.png" alt="">
-                        <img src="./img/partner/logo_maroc_5-e3cf4cd0ba3bffe9beccf0ffdd1d350d71483f4b2766ae3857ad034849d71d06.png" alt="">
-                        <img src="./img/partner/logo_maroc_6-1364f9ce7f64d545bf40926424c0bbdb48f87f81a78a8785de57157bba0822c2.png" alt="">
+                        <img src="./img/partner/logo_maroc_3-8bdcf491bb88657d0d9a40ced60d543c9abc4bfd6125871d2063f6fbdd57357d.png" alt="logo_maroc">
+                        <img src="./img/partner/logo_maroc_4-32af577cdd518c54bae8901eb7efc1d8bf58ce0d2a68de54eb91011a0f9c3ef8.png" alt="logo_maroc">
+                        <img src="./img/partner/logo_maroc_5-e3cf4cd0ba3bffe9beccf0ffdd1d350d71483f4b2766ae3857ad034849d71d06.png" alt="logo_maroc">
+                        <img src="./img/partner/logo_maroc_6-1364f9ce7f64d545bf40926424c0bbdb48f87f81a78a8785de57157bba0822c2.png" alt="logo_maroc">
                     </div>
                 </div>
             </section>
@@ -334,22 +338,23 @@
             <!-- statistic -->
             <section class="statistic" id="statistic">
                 <h2 class="title text-center">Notre Agence En Chiffre</h2>
+                <p class="exlipacation">Chaque projet achevé nous rend plus fort et nous permet d’acquérir une meilleure expérience.</p>
                 <div class="container socail">
                     <div class="downloand">
                         <i class="fas fa-download"></i>
-                        <span>+35 000</span>
+                        <span>+350<br>downloand</span>
                     </div>
                     <div class="awards">
                         <i class="fas fa-medal"></i>
-                        <span>10</span>
+                        <span>10<br>awards</span>
                     </div>
                     <div class="likes">
                         <i class="fas fa-thumbs-up"></i>
-                        <span>+200 000</span>
+                        <span>+20M<br>likes</span>
                     </div>
                     <div class="recommended">
                         <i class="fas fa-globe"></i>
-                        <span>+2 000</span>
+                        <span>+200<br>recommended</span>
                     </div>
                 </div>
                 <div class="contact container">

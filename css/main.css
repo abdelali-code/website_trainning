@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Abel|Bitter&display|Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Abel|Inconsolata|Pacifico&display=swap');
 
 /* 
 font-family: 'Abel', sans-serif; for normal text
@@ -31,8 +31,10 @@ body {
     
 
 header {
-    background: rgb(252,252,252);
-    background: linear-gradient(90deg, rgba(252,252,252,0.9587185215883228) 0%, rgba(126,34,201,0.981127485173757) 0%, rgba(86,35,130,1) 100%);
+    /* background: rgb(252,252,252);
+    background: linear-gradient(90deg, rgba(252,252,252,0.9587185215883228) 0%, rgba(126,34,201,0.981127485173757) 0%, rgba(86,35,130,1) 100%); */
+    background: url(../img/blue2.jpg) no-repeat top right;
+    background-size: cover;
     min-height: 700px;
     height: 100vh;
     border-bottom-left-radius: 40%;
@@ -42,15 +44,22 @@ header {
 nav {
     display: flex;
     justify-content: flex-end;
-    font-size: 1.8rem;
-    font-family: 'Bitter', serif;
+    font-size: 1.7rem;
+    font-family: 'Inconsolata', monospace;
     padding: 20px;
-    background-color: rgb(128, 87, 182);
+    background-color: rgba(0, 0, 0, .9); 
+}
+
+.description h1 {
+    color: rgb(255, 115, 64);
 }
 .logo {
     margin-right: auto;
+    /* color: rgb(255, 115, 64); */
     color: rgb(255, 115, 64);
     font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    transition: all 0.6s;
 }
 nav ul li {
     display: inline-block;
@@ -58,9 +67,10 @@ nav ul li {
 }
 
 nav a {
+    /* color: #fff; */
     color: #fff;
 }
-nav ul li a:hover {
+nav ul li a:hover:not(.active) {
     color: rgb(255, 115, 64);
 }
 
@@ -68,12 +78,12 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     font-size: 2rem;
-    color: #fff;
+    color: #000;
 }
 
 .description {
     flex: 1;
-    margin-top: 50px;
+    margin-top: 80px;
     margin-right: 48px;
 }
 
@@ -86,7 +96,7 @@ nav ul li a:hover {
     color: #50cc65;
     visibility: hidden;
     position: relative;
-    top: -255px;
+    top: -240px;
     left: 100px;
 }
 
@@ -126,6 +136,19 @@ nav ul li a:hover {
         font-size: 32px !important;
     }
 }
+
+@media (max-width: 575px)
+{
+    .header
+    {
+        background: url(../img/blue2.jpg) no-repeat bottom bottom;
+        color: rgb(228, 196, 15);
+    }
+    .description {
+        font-size: 24px;
+    }
+    
+}
 /* end header */
 
 /* start services */
@@ -138,16 +161,17 @@ nav ul li a:hover {
     display: flex;
 }
 .services figure {
-    flex: 250px;
-    border: 0.6px dashed rgb(10, 5, 5);
-    transition: all .6s;
-    padding: 0px 15px;
+    flex: 25%;
+    margin-left: 10px;
+    border: 0.03px dashed rgb(180, 180, 180);
+    transition: all 0.5s;
+    padding: 0px 20px;
 }
 
 .services figure:hover {
-	background-color: rgb(255, 115, 64);
+    background: rgb(224, 130, 42);
 	color: white;
-	position: relative;
+    position: relative;
 	transform: translateY(-20px);
 }
 
@@ -157,7 +181,7 @@ nav ul li a:hover {
 
 .services .fas {
     font-size: 200%;
-    color: #7124b0;
+    color: #248fb0;
     padding: 20px 0px;
 }
 @media (max-width: 992px) {
@@ -184,7 +208,7 @@ nav ul li a:hover {
 .about_img, .about_descri {
     flex: 1;
     margin-top: 50px;
-    color: #fff;
+    color: #000;
 }
 
 .about_descri {
@@ -193,8 +217,9 @@ nav ul li a:hover {
 
 #qui_nous {
     
-    background: rgb(252,252,252);
-    background: linear-gradient(90deg, rgba(252,252,252,0.9587185215883228) 0%, rgba(126,34,201,0.981127485173757) 0%, rgba(86,35,130,1) 100%);
+    /* background: rgb(252,252,252);
+    background: linear-gradient(90deg, rgba(252,252,252,0.9587185215883228) 0%, rgba(126,34,201,0.981127485173757) 0%, rgba(86,35,130,1) 100%); */
+    background-color: #f7fafd;
 }
 @media (max-width: 992px) {
     .about_us {
@@ -298,10 +323,11 @@ nav ul li a:hover {
 /* equipe  */
 .equipes {
     clear: both;
-    background: rgb(252,252,252);
-    background: linear-gradient(90deg, rgba(252,252,252,0.9587185215883228) 0%, rgba(126,34,201,0.981127485173757) 0%, rgba(86,35,130,1) 100%);
+    /* background: rgb(252,252,252);
+    background: linear-gradient(90deg, rgba(252,252,252,0.9587185215883228) 0%, rgba(126,34,201,0.981127485173757) 0%, rgba(86,35,130,1) 100%); */
+    background-color: #f7fafd;
     padding-bottom: 32px;
-    color: #fff;
+    color: #000;
 }
 
 .equipe_grp {
@@ -346,6 +372,10 @@ nav ul li a:hover {
 /* end nos partner */
 
 /* testimonials */
+.testimonials {
+    background-color: #f7fafd;
+    padding-bottom: 32px; 
+}
 .users {
     display: flex;
     justify-content: space-between;
@@ -394,6 +424,9 @@ nav ul li a:hover {
 /* tetimonials */
 
 /* pricing */
+#pricing {
+    padding-bottom: 32px;
+}
 .pricing_list {
     display: flex;
     justify-content: space-between;
@@ -416,7 +449,8 @@ nav ul li a:hover {
 .prising_item h4 {
     padding: 24px 20px;
     width: inherit;
-    background-color: #50cc65;
+    background: rgb(252,252,252);
+    background: linear-gradient(90deg, rgba(252,252,252,0.9587185215883228) 0%, rgba(238,144,12,0.981127485173757) 0%, rgba(185,81,7,1) 100%);
     color: #fff;
 }
 .prising_item ul li:not(:first-child) {
@@ -455,7 +489,12 @@ nav ul li a:hover {
 /* end pricing */
 
 
-/* social media and awards */
+/* social media and awards
+background-color: #f7fafd; */
+
+.statistic {
+    background-color: #f7fafd;
+}
 .socail {
     display: flex;
     justify-content: space-around;
@@ -535,10 +574,8 @@ footer {
     padding: 20px;
     display: flex;
     justify-content: flex-end;
-    background: rgb(252,252,252);
     color: #fff;
-    background: linear-gradient(90deg, rgba(252,252,252,0.9587185215883228) 0%, rgba(126,34,201,0.981127485173757) 0%, rgba(86,35,130,1) 100%);
-
+    background-color: rgba(0, 0, 0, .9)
 }
 
 footer p {
@@ -602,6 +639,9 @@ footer ul li a {
     .container {
         width: 100%;
     }
+    .title  {
+        font-size: 24px;
+    }
 }
 
 /* for small */
@@ -658,10 +698,10 @@ footer ul li a {
 }
 
 .title {
-    font-size: 56px;
+    font-size: 42px;
     text-transform: capitalize;
     padding: 20px 0;
-    color: rgb(255, 115, 64);
+    color: rgb(15, 12, 11);
 }
 
 .flex {
@@ -699,5 +739,20 @@ footer ul li a {
 
 
 .btn:hover {
-    background-color: #50cc65;
+    background-color: #50b9cc;
 }
+
+.active {
+    color: rgb(255, 115, 64);
+}
+
+.exlipacation
+{
+    text-align: center;
+    font-size: 1.7rem;
+    padding-bottom: 24px;
+    text-transform: lowercase;
+    font-weight: bold;
+}
+
+
